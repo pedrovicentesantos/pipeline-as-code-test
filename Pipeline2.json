@@ -1,0 +1,50 @@
+{
+  "format_version" : 1,
+  "group" : "PipelineAsCode",
+  "name": "Pipeline2",
+  "materials": [
+    {
+      "pipeline": "Pipeline1",
+      "stage": "stage1",
+      "name": "pipelineMaterial",
+      "type": "dependency"
+    }
+  ],
+  "stages": [
+    {
+      "name": "stage1",
+      "fetch_materials": true,
+      "never_cleanup_artifacts": false,
+      "clean_working_directory": false,
+      "jobs": [
+        {
+          "name": "job1",
+          "environment_variables": [],
+          "resources": [],
+          "run_instance_count": null,
+          "timeout": 0,
+          "tasks": [
+            {
+              "type": "fetch",
+              "run_if": "passed",
+              "pipeline": "Pipeline1",
+              "stage": "stage1",
+              "job": "job1",
+              "is_source_a_file": "true",
+              "source": "my-artifact.html",
+              "destination": ""
+            },
+            {
+              "type": "exec",
+              "run_if": "passed",
+              "command": "cat",
+              "arguments": [
+                "my-artifact.html"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
