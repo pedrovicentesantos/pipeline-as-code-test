@@ -36,6 +36,14 @@
               "type": "exec",
               "run_if": "passed",
               "command": "./build"
+            },
+            {
+              "type": "exec",
+              "run_if": "passed",
+              "command": "echo",
+              "arguments": [
+                "Teste"
+              ]
             }
           ]
         }
