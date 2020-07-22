@@ -45,6 +45,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "stage2",
+      "fetch_materials": false,
+      "never_cleanup_artifacts": false,
+      "clean_working_directory": false,
+      "jobs": [
+        {
+          "name": "job1",
+          "environment_variables": [],
+          "resources": [],
+          "run_instance_count": null,
+          "timeout": 0,
+          "tasks": [
+            
+            {
+              "type": "exec",
+              "run_if": "passed",
+              "command": "echo",
+              "arguments": [
+                "Hello"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
