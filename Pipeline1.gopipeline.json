@@ -13,7 +13,8 @@
       "url": "https://github.com/pedrovicentesantos/workshopdev-omnistack-11",
       "branch":"master",
       "name": "gitMaterial2",
-      "type":"git"
+      "type":"git",
+      "destination": "material2"
     }
   ],
   "stages": [
