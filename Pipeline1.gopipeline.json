@@ -8,7 +8,7 @@
       "branch": "master",
       "name": "gitMaterial",
       "type": "git",
-      "destination":""
+      "destination":"material1"
     },
     {
       "url": "https://github.com/pedrovicentesantos/workshopdev-omnistack-11",
