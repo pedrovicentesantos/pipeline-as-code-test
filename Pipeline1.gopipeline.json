@@ -60,7 +60,7 @@
               "run_if": "passed",
               "command": "echo",
               "arguments": [
-                "Teste1"
+                "Novo echo"
               ]
             }
           ]
