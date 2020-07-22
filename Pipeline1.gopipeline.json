@@ -46,6 +46,24 @@
               ]
             }
           ]
+        },
+        {
+          "name": "job2",
+          "environment_variables": [],
+          "tabs": [],
+          "resources": [],
+          "run_instance_count": null,
+          "timeout": 0,
+          "tasks": [
+            {
+              "type": "exec",
+              "run_if": "passed",
+              "command": "echo",
+              "arguments": [
+                "Teste1"
+              ]
+            }
+          ]
         }
       ]
     }
